@@ -44,8 +44,10 @@ public class DragNShoot : MonoBehaviour
             endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
             endPoint.z = 15;
             Debug.Log(endPoint);
+
+            force = new Vector2(Mathf.Clamp(startPoint.x - endPoint.x, minPower.x, maxPower.x), Mathf.Clamp(startPoint.y - endPoint.y, minPower.y, maxPower.y));
+            rb.AddForce(force * power, ForceMode2D.Impulse);
         }
-        force = new Vector2(Mathf.Clamp(startPoint.x - endPoint.x, minPower.x, maxPower.x), Mathf.Clamp(startPoint.y - endPoint.y, minPower.y, maxPower.y));
-        rb.AddForce(force * power, ForceMode2D.Impulse);
+
     }
 }

@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0d370034203f649a1961a0cb1a6535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 2
+  power: 5
   rb: {fileID: 690239879}
   minPower: {x: -3, y: -3}
   maxPower: {x: 3, y: 3}
