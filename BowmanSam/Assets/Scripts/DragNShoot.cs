@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class DragNShoot : MonoBehaviour
@@ -11,6 +12,9 @@ public class DragNShoot : MonoBehaviour
     public Vector2 maxPower;
 
     public TrajectoryLine tl;
+
+    public float waitTime = 2.0f;
+    float timer;
 
     Camera cam;
     Vector2 force;
@@ -25,7 +29,18 @@ public class DragNShoot : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        timer += Time.deltaTime;
+        if (timer > waitTime)
+        {
+            Destroy(gameObject);
+        }
+
+
+
+        float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        if (Input.GetMouseButtonDown(0))
         {
             startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
             startPoint.z = 15;
@@ -48,6 +63,8 @@ public class DragNShoot : MonoBehaviour
             force = new Vector2(Mathf.Clamp(startPoint.x - endPoint.x, minPower.x, maxPower.x), Mathf.Clamp(startPoint.y - endPoint.y, minPower.y, maxPower.y));
             rb.AddForce(force * power, ForceMode2D.Impulse);
         }
+
+        
 
     }
 }
