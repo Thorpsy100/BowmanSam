@@ -31,7 +31,6 @@ public class DragNShoot : MonoBehaviour
         {
             startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
             startPoint.z = 15;
-            Debug.Log(startPoint);
         }
     }
 

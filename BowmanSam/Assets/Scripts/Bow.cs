@@ -28,12 +28,6 @@ public class Bow : MonoBehaviour
     public void Shoot()
     {
         GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
-        /*while (Input.GetMouseButtonDown(0))
-        {
-            newArrow.transform.position = shotPoint.position;
-            newArrow.transform.rotation = shotPoint.rotation;
-        }*/
-        //newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
     }
 
 
