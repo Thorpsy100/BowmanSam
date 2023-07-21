@@ -7,6 +7,7 @@ TagManager:
   - Arrow
   - Target
   - Boarder
+  - Near_Miss
   layers:
   - Default
   - TransparentFX

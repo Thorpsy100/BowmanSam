@@ -17,7 +17,6 @@ public class Sounds : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             pullBackSound = Random.Range(1, 4);
-            Debug.Log(pullBackSound);
             if(pullBackSound == 1)
             {
                 source.PlayOneShot(pullBack01);

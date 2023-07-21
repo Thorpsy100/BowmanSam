@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2517620115722637106}
   - component: {fileID: 2517620115722637117}
+  - component: {fileID: 5276928527881403957}
   m_Layer: 0
   m_Name: Ground (2)
   m_TagString: Boarder
@@ -58,6 +59,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3011642, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5276928527881403957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517620115722637107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d2b9db6950ac245b445f28f6449ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 6058685919681812379, guid: 04a2f18cee347de45a0d78780e2ceef7, type: 3}
 --- !u!1 &2517620116061280467
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,6 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2517620116061280466}
   - component: {fileID: 2517620116061280477}
+  - component: {fileID: 8175098363985088358}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Boarder
@@ -116,6 +131,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 14.699337}
   m_EdgeRadius: 0
+--- !u!114 &8175098363985088358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517620116061280467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d2b9db6950ac245b445f28f6449ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 6058685919681812379, guid: 04a2f18cee347de45a0d78780e2ceef7, type: 3}
 --- !u!1 &2517620116750999198
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,6 +154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2517620116750999193}
   - component: {fileID: 2517620116750999192}
+  - component: {fileID: 5114733117402156867}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Boarder
@@ -174,6 +203,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 14.847147}
   m_EdgeRadius: 0
+--- !u!114 &5114733117402156867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517620116750999198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d2b9db6950ac245b445f28f6449ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 6058685919681812379, guid: 04a2f18cee347de45a0d78780e2ceef7, type: 3}
 --- !u!1 &2517620117600381131
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2517620117600381130}
+  - component: {fileID: 1377315958682861588}
   m_Layer: 0
   m_Name: Boarder
   m_TagString: Boarder
@@ -209,6 +252,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1377315958682861588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517620117600381131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d2b9db6950ac245b445f28f6449ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 6058685919681812379, guid: 04a2f18cee347de45a0d78780e2ceef7, type: 3}
 --- !u!1 &2517620117631116144
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2517620117631116147}
   - component: {fileID: 2517620117631116146}
+  - component: {fileID: 2919768694575331067}
   m_Layer: 0
   m_Name: Ground (1)
   m_TagString: Boarder
@@ -267,3 +324,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.31225, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2919768694575331067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517620117631116144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d2b9db6950ac245b445f28f6449ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 6058685919681812379, guid: 04a2f18cee347de45a0d78780e2ceef7, type: 3}
