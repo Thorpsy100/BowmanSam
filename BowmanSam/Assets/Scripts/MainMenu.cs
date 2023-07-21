@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,13 +19,38 @@ public class MainMenu : MonoBehaviour
         //When pressing play loads the next scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    private IEnumerator LoadScene(int index)
+    {
+        // Wait
+        yield return new WaitForSeconds(0.5f);
+        // Load scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + index);
+
+    }
     public void PlayGame()
     {
         //Makes the sound for pressing the button, invoke for delay so it doesn't cut out
         soundPlayer.Play();
-        Invoke("LoadNextScene", 0.5f);
+        StartCoroutine(LoadScene(1));
+        //Invoke(nameof(LoadNextScene), 0.5f);
     }
-    private void ExitGame()
+
+    public void PlayGameHard()
+    {
+        //Makes the sound for pressing the button, invoke for delay so it doesn't cut out
+        soundPlayer.Play();
+        StartCoroutine(LoadScene(2));
+
+    }
+    public void PlayGameRelax()
+    {
+        //Makes the sound for pressing the button, invoke for delay so it doesn't cut out
+        soundPlayer.Play();
+        StartCoroutine(LoadScene(3));
+    }
+
+        private void ExitGame()
     {
         //Quits game
         Application.Quit();
@@ -37,3 +63,4 @@ public class MainMenu : MonoBehaviour
         Invoke("ExitGame", 0.5f);
     }
 }
+
