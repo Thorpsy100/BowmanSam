@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 6058685919681812369}
   - component: {fileID: 6058685919681812371}
   - component: {fileID: 6058685919681812374}
+  - component: {fileID: -3153669609193712921}
   m_Layer: 0
   m_Name: Arrow_Test
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -272,3 +273,16 @@ MonoBehaviour:
   maxPower: {x: 3, y: 3}
   tl: {fileID: 0}
   waitTime: 2
+--- !u!114 &-3153669609193712921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6058685919681812379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac5a4c224ad8c348b0f74cb251b1693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 6058685919681812379}
