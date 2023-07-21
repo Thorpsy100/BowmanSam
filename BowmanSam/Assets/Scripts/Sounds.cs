@@ -34,6 +34,7 @@ public class Sounds : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
+            source.Stop();
             source.PlayOneShot(fire);
         }
     }
