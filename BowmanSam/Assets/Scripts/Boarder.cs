@@ -10,11 +10,9 @@ public class Boarder : MonoBehaviour
     {
         if(GameObject.Find("Arrow_Test(Clone)").GetComponent<Arrow>().nearMiss == false)
         {
-            Debug.Log("a");
         }
         else if(GameObject.Find("Arrow_Test(Clone)").GetComponent<Arrow>().nearMiss == true)
         {
-            Debug.Log("b");
         }
     }
 }
