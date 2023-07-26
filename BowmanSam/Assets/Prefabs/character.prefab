@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7179494177961232539}
   - component: {fileID: 7179494177961232538}
   - component: {fileID: 5094537612732109360}
+  - component: {fileID: 1957931197942199629}
   m_Layer: 0
   m_Name: character
   m_TagString: Untagged
@@ -99,6 +100,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeArrow: 0
+--- !u!114 &1957931197942199629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179494177961232537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9c579077e707046ad08c60d7a29045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7179494179515165851
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,10 +264,6 @@ MonoBehaviour:
   pullBack03: {fileID: 8300000, guid: ae5ed55959e1f7240a288f5e238caf7e, type: 3}
   fire: {fileID: 8300000, guid: e29dfcf23bfbe9948991ee1b777dc617, type: 3}
   pullBackSound: 0
-  hit01: {fileID: 8300000, guid: fe68d0277bac0834cb535c2bd45bc46c, type: 3}
-  hit02: {fileID: 8300000, guid: d323e829841363249a23e29b38a13469, type: 3}
-  hit03: {fileID: 8300000, guid: 6eb3419e19e5502468b895ec7aae5e3a, type: 3}
-  hitSound: 0
 --- !u!82 &7179494179751713718
 AudioSource:
   m_ObjectHideFlags: 0

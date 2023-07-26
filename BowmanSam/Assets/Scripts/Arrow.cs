@@ -7,7 +7,6 @@ public class Arrow : MonoBehaviour
     public bool nearMiss = false;
     public AudioSource source;
     public AudioClip nearMissSound;
-    public AudioClip farMissSound;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,7 +23,6 @@ public class Arrow : MonoBehaviour
             GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow = false;
             if(nearMiss == false)
             {
-                source.PlayOneShot(farMissSound);
             }
             Destroy(gameObject);
             
