@@ -8,7 +8,7 @@ public class TargetLocationChanger : MonoBehaviour
     public float xMin = -4.96f;
     public float xMax = 7.83f;
     public float yMin = -3.41f;
-    public float yMax = 4.14f;
+    public float yMax = 4.06f;
 
     public float xPosition;
     public float yPosition;
@@ -24,9 +24,9 @@ public class TargetLocationChanger : MonoBehaviour
     {
         if (other.gameObject.tag == "Arrow")
         {
-            xPosition = Random.Range(xMin, xMax + 1);
+            xPosition = Random.Range(xMin, xMax + .5f);
             //Debug.Log("x value is " + xPosition);
-            yPosition = Random.Range(yMin, yMax + 1);
+            yPosition = Random.Range(yMin, yMax + .5f);
             //Debug.Log("y value is " + yPosition);
             transform.position = new Vector3(xPosition, yPosition);
             
