@@ -20,12 +20,19 @@ public class Arrow : MonoBehaviour
 
         if(other.gameObject.tag == "Boarder")
         {
-            Destroy(gameObject);
+            
+            GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow = false;
             if(nearMiss == false)
             {
                 source.PlayOneShot(farMissSound);
             }
+            Destroy(gameObject);
             
+        }
+        if (other.gameObject.tag == "Target")
+        {
+            Destroy(gameObject);
+            GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow = false;
         }
     }
 }

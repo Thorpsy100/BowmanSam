@@ -16,25 +16,31 @@ public class Sounds : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            pullBackSound = Random.Range(1, 4);
-            if(pullBackSound == 1)
+            if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
             {
-                source.PlayOneShot(pullBack01);
-            }
-            else if(pullBackSound == 2)
-            {
-                source.PlayOneShot(pullBack02);
-            }
-            else if(pullBackSound == 3)
-            {
-                source.PlayOneShot(pullBack03);
+                pullBackSound = Random.Range(1, 4);
+                if (pullBackSound == 1)
+                {
+                    source.PlayOneShot(pullBack01);
+                }
+                else if (pullBackSound == 2)
+                {
+                    source.PlayOneShot(pullBack02);
+                }
+                else if (pullBackSound == 3)
+                {
+                    source.PlayOneShot(pullBack03);
+                }
             }
             
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            source.Stop();
-            source.PlayOneShot(fire);
+            if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
+            {
+                source.Stop();
+                source.PlayOneShot(fire);
+            }
         }
     }
 }

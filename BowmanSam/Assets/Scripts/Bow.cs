@@ -27,7 +27,10 @@ public class Bow : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+        if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
+        {
+            GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+        }
     }
 
 

@@ -1,26 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 public class TargetLocationChanger : MonoBehaviour
 {
-    public float xMin = -5.25f;
-    public float xMax = 8.4f;
-    public float yMin = -3.6f;
-    public float yMax = 4.5f;
+    public float xMin = -4.96f;
+    public float xMax = 7.83f;
+    public float yMin = -3.41f;
+    public float yMax = 4.14f;
 
     public float xPosition;
     public float yPosition;
+
+    public AudioSource source;
+    public AudioClip hit01;
+    public AudioClip hit02;
+    public AudioClip hit03;
+
+    public int hitSound;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Arrow")
         {
             xPosition = Random.Range(xMin, xMax + 1);
-            Debug.Log("x value is " + xPosition);
+            //Debug.Log("x value is " + xPosition);
             yPosition = Random.Range(yMin, yMax + 1);
-            Debug.Log("y value is " + yPosition);
+            //Debug.Log("y value is " + yPosition);
             transform.position = new Vector3(xPosition, yPosition);
+            
+            hitSound = Random.Range(1, 4);
+            Debug.Log("number is" + hitSound);
+            if (hitSound == 1)
+            {
+                source.PlayOneShot(hit01);
+            }
+            if (hitSound == 2)
+            {
+                source.PlayOneShot(hit02);
+            }
+            if (hitSound == 3)
+            {
+                source.PlayOneShot(hit03);
+            }
         }
     }
 }
