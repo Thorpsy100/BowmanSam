@@ -70,6 +70,8 @@ GameObject:
   - component: {fileID: 7069243474294371023}
   - component: {fileID: -6654289699439272190}
   - component: {fileID: 4757641561013791457}
+  - component: {fileID: 3880932432759874435}
+  - component: {fileID: 1516576759795139194}
   m_Layer: 0
   m_Name: Target
   m_TagString: Target
@@ -264,3 +266,45 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!68 &3880932432759874435
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069243474294371057}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.29962915, y: -1.5387226}
+  - {x: -0.056488622, y: -1.6005086}
+  - {x: -0.6205394, y: -1.4451131}
+  - {x: -1.1653442, y: -1.0638493}
+  - {x: -1.6001613, y: -0.20970523}
+  - {x: -1.4956923, y: 0.46063244}
+  - {x: -1.2811936, y: 0.92977583}
+  - {x: -0.7171053, y: 1.4541774}
+  - {x: 0.087055355, y: 1.569892}
+  - {x: 0.34291422, y: 1.5218136}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1516576759795139194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069243474294371057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9c579077e707046ad08c60d7a29045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
