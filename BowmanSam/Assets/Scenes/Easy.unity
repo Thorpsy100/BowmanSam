@@ -1071,6 +1071,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2517620115722637107, guid: fef5a2b2e9859fd4d8fece699e257893, type: 3}
+      propertyPath: m_TagString
+      value: Border
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517620116061280467, guid: fef5a2b2e9859fd4d8fece699e257893, type: 3}
+      propertyPath: m_TagString
+      value: Border
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517620116750999198, guid: fef5a2b2e9859fd4d8fece699e257893, type: 3}
+      propertyPath: m_TagString
+      value: Border
+      objectReference: {fileID: 0}
     - target: {fileID: 2517620117600381130, guid: fef5a2b2e9859fd4d8fece699e257893, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1117,7 +1129,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2517620117600381131, guid: fef5a2b2e9859fd4d8fece699e257893, type: 3}
       propertyPath: m_Name
-      value: Boarder
+      value: Border
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517620117600381131, guid: fef5a2b2e9859fd4d8fece699e257893, type: 3}
+      propertyPath: m_TagString
+      value: Border
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517620117631116144, guid: fef5a2b2e9859fd4d8fece699e257893, type: 3}
+      propertyPath: m_TagString
+      value: Border
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fef5a2b2e9859fd4d8fece699e257893, type: 3}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boarder : MonoBehaviour
+public class Border : MonoBehaviour
 {
     public GameObject arrow;
     public AudioSource source;

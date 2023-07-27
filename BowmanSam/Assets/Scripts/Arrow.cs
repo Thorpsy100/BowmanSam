@@ -17,7 +17,7 @@ public class Arrow : MonoBehaviour
 
         }
 
-        if(other.gameObject.tag == "Boarder")
+        if(other.gameObject.tag == "Border")
         {
             
             GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow = false;
