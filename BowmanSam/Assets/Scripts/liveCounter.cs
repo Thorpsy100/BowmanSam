@@ -1,23 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Score : MonoBehaviour
+public class liveCounter : MonoBehaviour
 {
-    public int score;
-    public Text currentScore;
+    public int liveCount;
+    public Lives live;
 
     private void Update()
     {
-        currentScore.text = score.ToString();
+        liveCount = live.numOfHearts;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Arrow")
-        {
-            score ++;
-        }
-
+            Debug.Log("executing");
+            live.numOfHearts = live.numOfHearts - 1;
     }
 }

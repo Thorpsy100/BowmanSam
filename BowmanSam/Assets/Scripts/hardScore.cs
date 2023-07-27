@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class Score : MonoBehaviour
+public class hardScore : MonoBehaviour
 {
     public int score;
     public Text currentScore;
@@ -16,8 +15,9 @@ public class Score : MonoBehaviour
     {
         if (other.gameObject.tag == "Arrow")
         {
-            score ++;
+            score+=3;
         }
 
     }
 }
+

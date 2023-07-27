@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d7663defecef3944dabf24d482602f86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -290,11 +290,6 @@ MonoBehaviour:
   nearMiss: 0
   source: {fileID: 30177477874673667}
   nearMissSound: {fileID: 8300000, guid: 0b64b457e39a539428980309bc49d2bf, type: 3}
-  farMissSound: {fileID: 0}
-  hit01: {fileID: 8300000, guid: fe68d0277bac0834cb535c2bd45bc46c, type: 3}
-  hit02: {fileID: 8300000, guid: d323e829841363249a23e29b38a13469, type: 3}
-  hit03: {fileID: 8300000, guid: 6eb3419e19e5502468b895ec7aae5e3a, type: 3}
-  hitSound: 0
 --- !u!82 &30177477874673667
 AudioSource:
   m_ObjectHideFlags: 0

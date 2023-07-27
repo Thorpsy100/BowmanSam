@@ -10,10 +10,10 @@ EditorBuildSettings:
     guid: 30c6b19f48264ff428a08c0d9a2b6641
   - enabled: 1
     path: Assets/Scenes/Easy.unity
-    guid: 72efc394965b3e64b8c4bff354038131
+    guid: e20a6e89504fce74299b8d344e28a37e
   - enabled: 1
     path: Assets/Scenes/Hard.unity
-    guid: 9cbd5df50e3257f4da154c03c34266e1
+    guid: f7885a6d70994424584986708962824a
   - enabled: 1
     path: Assets/Scenes/Relax.unity
     guid: 2cda990e2423bbf4892e6590ba056729
