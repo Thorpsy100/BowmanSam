@@ -1,25 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Bow : MonoBehaviour
 {
-    public GameObject arrow;
-    public float launchForce;
-    public Transform shotPoint;
+    public DragNShoot dragNShoot;
 
-    private void Update()
+    private void LateUpdate()
     {
 
-        Vector2 bowPosition = transform.position;
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = mousePosition - bowPosition;
-        transform.right = direction;
 
-        if (Input.GetMouseButtonDown(0))
+
+        if (Input.GetMouseButton(0))
         {
-            Shoot();
+            transform.right = dragNShoot.distance.normalized;
+        }
+        else
+        {
+            Vector2 bowPosition = transform.position;
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 direction = mousePosition - bowPosition;
+            transform.right = direction;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -28,16 +28,17 @@ public class Bow : MonoBehaviour
         }
 
     }
-    
 
 
-    public void Shoot()
-    {
-        if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
-        {
-            GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
-        }
-    }
+
+    //public void Shoot()
+    //{
+        //if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
+        //{
+        //    GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+        //    newArrow.transform.parent = transform;
+        //}
+    //}
 
 
 }

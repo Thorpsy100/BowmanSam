@@ -14,7 +14,7 @@ public class Lives : MonoBehaviour
 
     void Update()
     {
-
+        lives = GameObject.Find("character").GetComponent<Lives>().lives;
         if (lives > numOfHearts)
         {
             lives = numOfHearts;

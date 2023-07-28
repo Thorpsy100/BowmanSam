@@ -16,7 +16,7 @@ public class Sounds : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
+            //if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
             {
                 pullBackSound = Random.Range(1, 4);
                 if (pullBackSound == 1)
@@ -36,7 +36,7 @@ public class Sounds : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
+            //if (GameObject.Find("character").GetComponent<ActiveArrow>().activeArrow == false)
             {
                 source.Stop();
                 source.PlayOneShot(fire);

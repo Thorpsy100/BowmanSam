@@ -14,6 +14,8 @@ public class TrajectoryLine : MonoBehaviour
 
     public void RenderLine(Vector3 startpoint, Vector3 endPoint)
     {
+        startpoint.z = 0;
+        endPoint.z = 0;
         lr.positionCount = 2;
         Vector3[] points = new Vector3[2];
         points[0] = startpoint;

@@ -9,8 +9,6 @@ public class Border : MonoBehaviour
     public AudioClip miss01;
     public AudioClip miss02;
     public AudioClip miss03;
-    public AudioClip manHit01;
-    public AudioClip manHit02;
     public int missSound;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -19,7 +17,7 @@ public class Border : MonoBehaviour
         {
             if (GameObject.Find("Arrow_Test(Clone)").GetComponent<Arrow>().nearMiss == false)
             {
-                missSound = Random.Range(1, 12);
+                missSound = Random.Range(1, 9);
                 if (missSound == 1)
                 {
                     source.PlayOneShot(miss01);
@@ -56,14 +54,7 @@ public class Border : MonoBehaviour
                 {
                     source.PlayOneShot(miss03);
                 }
-                if (missSound == 10)
-                {
-                    source.PlayOneShot(manHit01);
-                }
-                if (missSound == 11)
-                {
-                    source.PlayOneShot(manHit02);
-                }
+
             }
         }
         else if(GameObject.Find("Arrow_Test(Clone)").GetComponent<Arrow>().nearMiss == true)
